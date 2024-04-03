@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Film</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="./script/createscript.js" defer></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="./index.html" id="logo-home"><img src="./images/IMDb-Logo.wine.svg" alt="Logo"></a>
+        <a href="./liste.html" class="navbar">Top 1000</a>
+        <a href="./createMovie.html" id="createMovieButton" class="navbar">Ajouter un film</a>
+    </nav>
+    <form id="createMovieForm">
+        <label for="Poster_Link">Lien vers l'image de l'affiche :</label>
+        <input type="text" id="Poster_Link" name="Poster_Link">
+
+        <label for="Series_Title">Titre :</label>
+        <input type="text" id="Series_Title" name="Series_Title">
+
+        <label for="Released_Year">Année de sortie :</label>
+        <input type="text" id="Released_Year" name="Released_Year">
+
+        <label for="Runtime">Durée :</label>
+        <input type="text" id="Runtime" name="Runtime">
+
+        <label for="Meta_score">Meta Score :</label>
+        <input type="text" id="Meta_score" name="Meta_score">
+
+        <label for="IMDB_Rating">Note IMDb :</label>
+        <input type="text" id="IMDB_Rating" name="IMDB_Rating">
+        
+        <!-- <label for="Certificate">Certificat :</label>
+        <input type="text" id="Certificate" name="Certificate"> -->
+
+        <!-- <label for="Genre">Genre :</label>
+        <input type="text" id="Genre" name="Genre">
+        
+        <label for="Overview">Résumé :</label>
+        <textarea id="Overview" name="Overview" rows="4" cols="50"></textarea> -->
+
+        <!-- <label for="Director">Réalisateur :</label>
+        <input type="text" id="Director" name="Director">
+
+        <label for="Star1">Acteur principal 1 :</label>
+        <input type="text" id="Star1" name="Star1">
+
+        <label for="Star2">Acteur principal 2 :</label>
+        <input type="text" id="Star2" name="Star2">
+
+        <label for="Star3">Acteur principal 3 :</label>
+        <input type="text" id="Star3" name="Star3"> -->
+
+        <!-- <label for="Star4">Acteur principal 4 :</label>
+        <input type="text" id="Star4" name="Star4">
+
+        <label for="No_of_Votes">Nombre de votes :</label>
+        <input type="text" id="No_of_Votes" name="No_of_Votes"> -->
+
+        <button type="submit">Ajouter le film</button>
+    </form>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">&#8679;</button>
+
+</body>
+</html>

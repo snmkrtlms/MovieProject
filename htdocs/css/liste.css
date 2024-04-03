@@ -1,0 +1,189 @@
+/* style pour la liste des films */
+h1{
+    margin: 6% 0 0 32%;
+    padding: 5px;
+    color: white;
+    background-color: rgb(13, 13, 21);
+    font-size: 42px;
+    text-align: center;
+    cursor:default;
+    width: 500px;
+}
+
+.films-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* style pour les cards  */
+.movie-card {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    background-color: rgb(13, 13, 21);
+    width: 800px;
+    border: 2px solid transparent;
+}
+
+.movie-card:hover{
+    background-color: rgb(18, 17, 28);
+    border-top: 2px solid rgb(255, 217, 28);
+}
+
+.movie-image {
+    width: 100px;
+    height: auto;
+    margin: 0 30px 0 30px;
+}
+
+.movie-details-container {
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+}
+
+.movie-title {
+    font-size: 24px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.movie-runtime {
+    margin-left: 10px;
+}
+
+.rating-label {
+    color: #aaa; 
+    margin: 0 5px 0 4px;
+    font-size: 15px;
+}
+
+.imdb-rating-number {
+    color: #ffffff; 
+    margin-right: 10px; 
+    font-size: 15px;
+}
+
+.metascore-label {
+    color: #aaa;
+    margin-left: 10px; 
+
+}
+
+.metascore-number {
+    background-color: #2ecc71; 
+    color: #ffffff; 
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.more-details-button, .edit-button, .delete-button {
+    background-color: #13121f;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: white;
+    border: 2px solid transparent;
+    margin : 20px 10px 0 0;
+    padding: 8px 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+/* Style when hovering over the button */
+.more-details-button:hover, .edit-button:hover, .delete-button:hover {
+    border-bottom: 2px solid rgb(255, 217, 28);
+    color: rgb(255, 217, 28);
+}
+
+.hidden {
+    display: none;
+}
+
+#moviesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#film-details-popup {
+    position: fixed;
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(13, 13, 21);;
+    color: white;
+    padding: 20px;  
+}
+
+#film-details-popup img, .img-popUp {
+    width: 100px;
+}
+
+#close-popup-button {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color:rgb(13, 13, 21);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgb(23, 22, 37);
+    border: 1px solid rgb(255, 217, 28);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(31, 31, 47);
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button#confirm-delete-button {
+    background-color: #d33;
+    color: white;
+}
+
+.popup button#cancel-delete-button {
+    background-color: #3085d6;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}

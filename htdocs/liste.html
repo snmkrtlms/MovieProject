@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Top 1000 Films IMDb</title>
+        <link rel="stylesheet" href="./css/liste.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="./script/listscript.js" defer></script>
+    </head>
+    <body>
+        <!-- Barre de navigation -->
+        <nav>
+            <a href="./index.html" id="logo-home"><img src="./images/IMDb-Logo.wine.svg" alt="Logo"></a>
+            <a href="./liste.html" class="navbar">Top 1000</a>
+            <a href="./createMovie.html" id="createMovieButton" class="navbar">Ajouter un film</a>
+        </nav>
+
+        <h1>Top 1000 des films</h1>
+        
+        <div id="film-details-popup" class="hidden">
+            <span id="close-popup-button" onclick="closeFilmDetailsPopup()"></span>
+            <div id="film-details"></div>
+        </div>
+        
+        <div id="moviesList" class="films-container"></div>
+
+        <div id="confirmation-popup" class="popup hidden">
+            <div class="popup-content">
+                <p>Êtes-vous sûr de vouloir supprimer ce film ?</p>
+                <button id="confirm-delete-button">Oui</button>
+                <button id="cancel-delete-button">Annuler</button>
+            </div>
+        </div>
+
+        <button id="scrollToTopBtn" onclick="scrollToTop()">&#8679;</button>
+    </body>
+</html>

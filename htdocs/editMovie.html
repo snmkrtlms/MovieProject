@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Film</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="./script/editscript.js" defer></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="./index.html" id="logo-home"><img src="./images/IMDb-Logo.wine.svg" alt="Logo"></a>
+        <a href="./liste.html" class="navbar">Top 1000</a>
+        <a href="./createMovie.html" id="createMovieButton" class="navbar">Ajouter un film</a>
+    </nav>
+
+    <form id="editMovieForm">
+        <label for="Poster_Link">Lien vers l'image de l'affiche :</label>
+        <input type="text" id="Poster_Link" name="Poster_Link">
+        <label for="Series_Title">Titre :</label>
+        <input type="text" id="Series_Title" name="Series_Title">
+        <label for="Released_Year">Année :</label>
+        <input type="text" id="Released_Year" name="Released_Year">
+        <label for="Runtime">Durée :</label>
+        <input type="text" id="Runtime" name="Runtime">
+        <button type="submit">Modifier</button>
+    </form>
+</body>
+</html>
