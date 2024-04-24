@@ -2,16 +2,4 @@
 
 Projet fait en Node.js - Javascript - MongoDB (NoSQL)
 
-Top 1000 Films IMDb
-
-
-
-
-
-
-
-
-
-
-
-PS : 949 films car 51 inexistants.
+Top 1000 Films IMDB
